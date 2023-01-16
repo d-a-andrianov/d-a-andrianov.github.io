@@ -1,0 +1,211 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* чтобы в цсс блочная модель учитывала все рамки и отступы */
+}
+
+html {
+    height: 100%;
+    /* делаем высоту 100% для красиового отображения */
+}
+
+body {
+    height: 100%;
+    /* делаем высоту 100% для красиового отображения */
+    font-family: 'Manrope', sans-serif;
+    /* добавляем шрифты из гугла */
+    margin: 0;
+    /* убираем отступы */
+}
+
+img {
+    display: block;
+    /* можно прописывать для всех картинок, это удобно */
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* делаем аккуратное расположение блоков хедер, маин и футер. Чтобы маин был всегда в центре, а остальное по краям */
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    align-items: center;
+    /* выравниваем элементы в шапке по центру */
+    height: 73px;
+    /* добавим 1 пикс чтобы нижняя линия как была с тенью */
+    border-bottom: 1px solid #E5E9F2;
+
+
+}
+
+.header-container {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    /* задаем флексы, чтобы элементы выстроились в ряд */
+    align-items: center;
+    /* чтобы выравнять элементы меню */
+
+}
+
+.logo {
+    margin-right: 40px;
+
+}
+
+.nav {
+    /* margin-top: -2px; */
+    /* можно убрать */
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1;
+    /* в данном случае не обязательно, если не будет переносов текста */
+    color: #18191F;
+
+
+}
+
+.nav-link {
+    margin-right: 32px;
+    color: #18191F;
+    text-decoration: none;
+
+}
+
+.nav-link:hover {
+    color: #8C30F5;
+    /* при наведении на ссылку меняется цвет */
+}
+
+
+
+
+.nav-link:last-child {
+    margin-right: 0;
+    /* убираем отступ у последнего элемента через псевдокласс */
+}
+
+.appstore {
+    margin-left: auto;
+    /* прижимаем влево */
+    display: flex;
+}
+
+.appstore-item {
+    margin-left: 12px;
+}
+
+.appstore-item:first-child {
+    margin-left: 0px;
+    /* убираем отступ у 1 значка */
+}
+
+/* Main */
+
+.main {
+
+}
+
+.main-container {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    /* задаем флексы, чтобы элементы выстроились в ряд */
+    justify-content: space-between;
+    /* раскидываем элементы по краям, чтобы потом не ставить между ними отступы */
+    align-items: center;
+    /* чтобы выравнять элементы по центру*/
+    padding-top: 197px;
+    padding-bottom: 197px;
+
+
+}
+
+.main-content {
+    width: 540px;
+    font-size: 18px;
+    color: #18191F;
+}
+
+.main-img {}
+
+.main-header {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 1.36;
+    color: #18191F;
+}
+
+.main-text {
+    margin-bottom: 32px;
+}
+
+.main-text p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.78;
+}
+
+.button {
+    display: inline-block;
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 62px;
+    background: #8C30F5;
+    border-radius: 8px; 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 62px;
+    /* делаем высоту строки равной высоте кнопки, чтобы не ставить верх-низ отступы  */
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button:hover {
+    opacity: 0.8;
+    /* будет реагировать при наведении */
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    background: #0B0D17;
+    color: #D9DBE1;
+}
+
+.footer-container {
+    width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    /* задаем флексы, чтобы элементы выстроились в ряд */
+    justify-content: space-between;
+    /* раскидываем элементы по краям, чтобы потом не ставить между ними отступы */
+    align-items: center;
+    /* чтобы выравнять элементы по центру*/
+}
+
+.footer-copyright {
+    font-size: 14px;
+}
+
+.footer-socials {
+    display: flex;
+
+}
+
+.footer-socials-items {
+    margin-left: 16px;
+
+}
+
